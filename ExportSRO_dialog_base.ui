@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ExportSRODialogBase</class>
+ <widget class="QDialog" name="ExportSRODialogBase">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>539</width>
+    <height>229</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>ExportSRO</string>
+  </property>
+  <widget class="QTabWidget" name="tabWidget">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>521</width>
+     <height>211</height>
+    </rect>
+   </property>
+   <property name="currentIndex">
+    <number>0</number>
+   </property>
+   <widget class="QWidget" name="tab">
+    <attribute name="title">
+     <string>Principal</string>
+    </attribute>
+    <widget class="QWidget" name="verticalLayoutWidget">
+     <property name="geometry">
+      <rect>
+       <x>16</x>
+       <y>11</y>
+       <width>481</width>
+       <height>161</height>
+      </rect>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <widget class="QLabel" name="label_2">
+        <property name="text">
+         <string>1 - Importer toutes les couches de la BDD</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label">
+        <property name="text">
+         <string>2 - Selectionner un SRO dans la couche SITE</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <layout class="QFormLayout" name="formLayout">
+        <item row="0" column="0">
+         <widget class="QLabel" name="label_3">
+          <property name="text">
+           <string>3 - Version :    </string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <widget class="QLineEdit" name="lineEdit"/>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <widget class="QCheckBox" name="checkBox">
+        <property name="text">
+         <string>Exporter via une date MCO</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <layout class="QFormLayout" name="formLayout_2">
+        <item row="0" column="0">
+         <widget class="QLabel" name="label_4">
+          <property name="text">
+           <string>4 - Date MCO :</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <widget class="QDateEdit" name="dateEdit">
+          <property name="calendarPopup">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButton">
+        <property name="text">
+         <string>Exporter</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tab_2">
+    <attribute name="title">
+     <string>Informations</string>
+    </attribute>
+    <widget class="QWidget" name="verticalLayoutWidget_2">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>501</width>
+       <height>172</height>
+      </rect>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_2">
+      <item>
+       <widget class="QLabel" name="label_5">
+        <property name="text">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;1 -&lt;/span&gt; Sélection des &lt;span style=&quot; font-weight:600;&quot;&gt;BOITE_OPTIQUE &lt;/span&gt;/ &lt;span style=&quot; font-weight:600;&quot;&gt;CABLE_OPTIQUE&lt;/span&gt; / &lt;span style=&quot; font-weight:600;&quot;&gt;ZAPBO&lt;/span&gt; / &lt;span style=&quot; font-weight:600;&quot;&gt;ZASRO &lt;/span&gt;grâce au nom.&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;2 -&lt;/span&gt; Sélection des &lt;span style=&quot; font-weight:600;&quot;&gt;DBL&lt;/span&gt; / &lt;span style=&quot; font-weight:600;&quot;&gt;ZANRO&lt;/span&gt; qui intersectent la ZASRO&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;3 -&lt;/span&gt; Sélection des &lt;span style=&quot; font-weight:600;&quot;&gt;ADDUCTION&lt;/span&gt; qui intersectent les DBL selectionnés&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;4 -&lt;/span&gt; Sélection des &lt;span style=&quot; font-weight:600;&quot;&gt;SUPPORT&lt;/span&gt; qui sont à l'intérieur des CABLE_OPTIQUE et ADDUCTION&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;5 -&lt;/span&gt; Sélection des &lt;span style=&quot; font-weight:600;&quot;&gt;POINT_TECHNIQUE&lt;/span&gt; qui intersectent la ZASRO, les CABLE_OPTIQUE et ADDUCTION&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;6 -&lt;/span&gt; Sélection des &lt;span style=&quot; font-weight:600;&quot;&gt;ZACABLE&lt;/span&gt; qui contiennent les ZAPBO&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_8">
+        <property name="text">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;justify&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Les problèmes d'accrochage et de nommage provoqueront un résultat incomplet.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>pushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>ExportSRODialogBase</receiver>
+   <slot>exporterSRO()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>120</x>
+     <y>183</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>252</x>
+     <y>118</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>exporterSRO()</slot>
+  <slot>exporterREC()</slot>
+ </slots>
+</ui>
