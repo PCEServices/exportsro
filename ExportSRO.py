@@ -162,7 +162,7 @@ class ExportSRO:
         icon_path = ':/plugins/ExportSRO/icon.png'
         self.add_action(
             icon_path,
-            text=self.tr(u''),
+            text=self.tr(u'Exporter les SRO'),
             callback=self.run,
             parent=self.iface.mainWindow())
 
